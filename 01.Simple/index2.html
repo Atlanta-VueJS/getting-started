@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <script src="https://unpkg.com/vue"></script>
+  </head>
+  <body>
+    <div id="my-vue-app">
+      <span>{{message}}</span>
+      <ul>
+        <li v-for="item in itemsInMyList">{{item}}</li>
+      </ul>
+    </div>
+
+    <script>
+      var app = new Vue({
+        el: '#my-vue-app',
+        data: {
+          message: 'Hello Vue!',
+          itemsInMyList: ['My first item.', 'Second item.', 'Third item is a charm.']
+        }
+      });
+    </script>
+  </body>
+</html>
