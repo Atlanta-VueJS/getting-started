@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <script src="https://unpkg.com/vue"></script>
+  </head>
+  <body>
+    <div id="my-vue-app">
+      <span>{{message}}</span>
+      <ul>
+        <my-list-item v-for="item in itemsInMyList" :my-property="item" :key="item"></my-list-item>
+      </ul>
+    </div>
+
+    <script>
+      Vue.component('my-list-item', {
+        props: ['myProperty'],
+        template: '<li><b>{{ myProperty }}<b/></li>',
+      });
+
+      var app = new Vue({
+        el: '#my-vue-app',
+        data: {
+          message: 'Hello Vue!',
+          itemsInMyList: ['My first item.', 'Second item.', 'Third item is a charm.']
+        }
+      });
+    </script>
+  </body>
+</html>
