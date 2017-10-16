@@ -1,6 +1,19 @@
-# separate
+# 02.Separate
 
-> Example of VueJS project with multiple files.
+> Example of VueJS project with multiple files. 
+
+*Please note that I committed the `dist` folder which is not a normal thing to do.  I did it simply to allow github pages to serve up the example web page.*
+
+## To recreate this project:
+
+``` bash
+# install vue-cli
+npm i -g vue-cli
+
+# generate out the webpack template
+vue init webpack my-project-name
+```
+
 
 ## Build Setup
 

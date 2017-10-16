@@ -1,6 +1,6 @@
 .DS_Store
 node_modules/
-dist/
+# dist/ (I commented out this line so github pages would serve up the built example.)
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
