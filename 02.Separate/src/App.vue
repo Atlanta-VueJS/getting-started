@@ -2,16 +2,19 @@
   <div id="app">
     <img src="./assets/logo.png">
     <hello-world/>
+    <color-list />
   </div>
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld'
+import ColorList from './components/ColorList'
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    HelloWorld,
+    ColorList
   }
 }
 </script>
