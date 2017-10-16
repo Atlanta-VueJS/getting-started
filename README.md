@@ -27,4 +27,5 @@ Here we:
 
 * Initialized the basic webpack template: ```vue init webpack myproject```
 * Added a `Vuex` store to the project.
+* Alter the state of the store by dispatching an action.
 
